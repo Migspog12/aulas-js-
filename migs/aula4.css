@@ -1,0 +1,15 @@
+#caixa{
+    border: 1px solid aliceblue;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.8s;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+}

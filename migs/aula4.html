@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="aula4.js"></script>
+    <link rel="stylesheet" href="aula4.css">
+</head>
+<body>
+    
+    <h1>Caixa</h1>
+    <div id="caixa">Caixa</div>
+
+
+    <hr>
+    <h1>painel de ediçao:</h1>
+
+
+
+    <!--mudar o texto da caixa-->
+ Mudar Texto: <input type="text" id="text" value="caixa" maxlength="15"><br>
+    <!--Largura-->
+ Largura:<input id="largura" type="range" min="50" max="500">
+    <!--Cor-->
+    <input id="cor" type="color" value="#ffffff">
+    <!--Altura-->
+    <br>Altura:<input id="altura" type="range" min="50" max="500">
+    <br>Border:<input id="radius" type="range" value="0">
+    <br>Contorno: 
+    <input id="borderwidth" type="number" style="width: 50px;" min="0" value="1">
+    <select name="" id="borderstyle">
+        <option value="solid">Normal</option>
+        <option value="dashed">Tracejada</option>
+        <option value="dotted">Pontilhada</option>
+        <option value="double">Dupla</option>
+    </select>
+    <input id="cor2" type="color" value="#000000">
+
+
+
+    <br><br><button onclick="editarcaixa()">Editar</button>
+
+</body>
+</html>
