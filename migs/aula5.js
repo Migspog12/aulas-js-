@@ -1,11 +1,20 @@
 lista = []
-function addLista(){
+function addItem(){
 
-    item = document.getElementById('item').value
-    lista.push(item)
-    document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
-
-
+    item = document.getElementById('item').value.trim()
+    item = item[0].toUpperCase() + item.slice(1).toLowerCase()
+    document.getElementById('item').value = ''
+    if( item.length == 0 || item.length > 20){
+        alert('O item precisa ter entre 1 a 20 caracteres')
+    
+    }else if( lista.includes(item)){
+        alert('esse item ja esta na lista')
+    }else{
+        lista.push(item)
+    }        
+    if(lista.length > 0){
+        document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+    }
 
 
 }

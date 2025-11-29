@@ -10,10 +10,13 @@
     
     <h1>Lista</h1>
 
-
+<form onsubmit="addItem(); return false;">
     <input id="item" type="text" placeholder="Item">
-    <button onclick="addLista()">Adicionar</button>
+    <button type="submit">Adicionar</button>
+</form>
+    
     <ol id="lista"></ol>
+
 
 </body>
 </html>
